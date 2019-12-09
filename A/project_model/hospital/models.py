@@ -5,7 +5,7 @@ class Dokter(models.Model):
     nama = models.CharField(max_length=50)
     nomor_telepon = models.CharField(max_length=15)
     bidang = models.CharField(max_length=20)
-    jadwal_praktek = models.DateTimeField("jadwal_praktek")
+    jadwal_praktek = models.DateTimeField("Jadwal praktek")
 
     def __str__(self):
         return self.nama+" ({})".format(self.bidang)
