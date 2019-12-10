@@ -123,16 +123,17 @@ header .alpha-tech {
 .blog-content .posts {
     margin-bottom: 7%;
 }
-.blog-content .create-post {
+.blog-content .btn {
+    font-size: 14px;
     background: #2ec6ce;
-    text-align: center;
     color: white;
-    border: solid #2ec6ce;
+    border: solid 2px #2ec6ce;
+    margin-bottom: 5%;
 }
-.blog-content .create-post:hover {
-    color: #2ec6ce;
+.blog-content .btn:hover {
     background: white;
-    border: solid #2ec6ce;
+    color: #2ec6ce;
+    border: solid 2px #2ec6ce;
 }
 
 /* MENTOR AND MENTEE */

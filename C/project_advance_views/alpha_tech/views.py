@@ -6,7 +6,7 @@ def home(request):
     return render(request, 'alpha_tech/home.html', {})
 
 def blog(request):
-    fields = {"posts": Blog.objects.all()}
+    fields = {"posts": Blog.objects.all()[::-1]}
     return render(request, 'alpha_tech/blog.html', fields)
 
 def mentor(request):
