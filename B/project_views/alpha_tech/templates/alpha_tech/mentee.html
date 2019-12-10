@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <title>Mentee</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-3">
+                    <a href="https://academy.alphatech.id/" class="alpha-tech">
+                        Alpha Tech Academy
+                    </a>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="header-nav">
+                        <ul class="header-nav__list list-unstyled">
+                            <li>
+                                <a href="../">Home</a>
+                            </li>
+                            <li>
+                                <a href="../blog">Blog</a>
+                            </li>
+                            <li>
+                                <a href="../mentor">Mentor</a>
+                            </li>
+                            <li>
+                                <a class="active" href="./">Mentee</a>
+                            </li>
+                            <li>
+                                <a href="../author">Author</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="home-title">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <img class="alpha-logo" src="{%static 'img/title/alpha-logo.png'%}"/>
+                    <h1>Alpha Tech Academy</h1>
+                    <h4>Alpha Tech Academy is a tech talent incubator that gives everyone
+                        (even non IT background) a chance to be a profesional Tech Talent
+                        3 months. Contact Person: Email: academy@alphatech.id Mobile phone:
+                        0877 9609 9530</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mentor-content">
+        <h2><strong>Our Mentee</strong></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img class="jobs" src="{%static 'img/mentee/jobs.png'%}"/>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-8">
+                    <h6><strong>Steve Jobs</strong></h6>
+                    <h6>"I learn so mych from Alpha Tech"</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <img class="page" src="{%static 'img/mentee/page.png'%}"/>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-8">
+                    <h6><strong>Larry Page</strong></h6>
+                    <h6>"Great place to learn about programming"</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <img class="trimo" src="{%static 'img/mentee/mark.png'%}"/>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-8">
+                    <h6><strong>Mark Zuckerberg</strong></h6>
+                    <h6>"The best place for who want to be a great IT talent.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row align-items-center product">
+                <span>Our Product: </span>
+                <img class="logo-grey-alphapay" src="{%static 'img/footer/logo-grey-alphapay.png'%}"/>
+                <img class="logo-grey-sepulsa" src="{%static 'img/footer/logo-grey-sepulsa.png'%}"/>
+                <img class="logo-grey-alphabill" src="{%static 'img/footer/logo-grey-alphabill.png'%}"/>
+            </div>
+            <div class="row align-items-center contact">
+                <span><strong>Contact Person: </strong></span>
+                <span>Mobile phone: 0877 9609 9530. Email: </span>
+                <span class="email">academy@alphatech.id</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
