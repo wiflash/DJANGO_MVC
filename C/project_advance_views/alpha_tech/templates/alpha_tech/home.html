@@ -1,0 +1,107 @@
+{%extends './base.html'%}
+
+{%block title%}
+{%load static%}
+Home
+{%endblock%}
+
+{%block nav%}
+<li>
+    <a class="active" href="./">Home</a>
+</li>
+<li>
+    <a href="./blog">Blog</a>
+</li>
+<li>
+    <a href="./mentor">Mentor</a>
+</li>
+<li>
+    <a href="./mentee">Mentee</a>
+</li>
+<li>
+    <a href="./author">Author</a>
+</li>
+{%endblock%}
+
+{%block header%}
+Contact Person: Email: academy@alphatech.id Mobile phone: 0877 9609 9530
+{%endblock%}
+
+{%block content%}
+<div class="home-content">
+    <div class="container">
+        <div class="row benefit-job-paid">
+            <div class="col-4 pic">
+                <img class="benefit" src="{%static 'img/home/benefit.png'%}"/>
+                <img class="search-job" src="{%static 'img/home/search-job.png'%}"/>
+                <img class="get-paid" src="{%static 'img/home/get-paid.png'%}"/>
+            </div>
+            <div class="col-8">
+                <h5>Learn awesome tech</h5>
+                <p>You will learn about programming language, such as Python and Javascript,
+                    build back-end apps using Flask framework with microservice concept, build
+                    client-site apps using React Library, etc.
+                </p>
+                <h5>Land new job</h5>
+                <p>If you can pass this awesome program, you will be part of our reliable tech
+                    team for especially Software Engineer position and other tech position such
+                    as Quality Engineer, System Analyst, etc.
+                </p>
+                <h5>Get paid to learn</h5>
+                <p>Join for free and earn some money. Yes you read that right, no registration
+                    fee required to enter this program. To make things even better, you will
+                    receive pocket money just for participating. Cool, right?
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mission">
+            <div class="col-4 pic">
+                <img class="img-mission" src="{%static 'img/home/mission.png'%}"/>
+            </div>
+            <div class="col-8">
+                <h4>Who are we</h4>
+                <p>Alpha Tech Academy is a tech talent incubator that gives everyone
+                    (even non IT background) a chance to be a profesional Tech Talent
+                    3 months of being a professional Tech Talent. What is our mission?
+                    We want to improve capability Tech Talent in Indonesia.
+                </p>
+                <h4 class="h4-mission">What is our mission</h4>
+                <p>We want to improve capability Tech Talent in Indonesia.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container learn">
+        <h4>What will you learn?</h4>
+        <div class="row align-items-center">
+            <div class="col-2">
+                <img class="learn-html" src="{%static 'img/home/learn-html.png'%}"/>
+            </div>
+            <div class="col-2">
+                <img class="learn-programming" src="{%static 'img/home/learn-programming.png'%}"/>
+            </div>
+            <div class="col-2">
+                <img class="learn-git" src="{%static 'img/home/learn-git.png'%}"/>
+            </div>
+            <div class="col-2">
+                <img class="learn-api" src="{%static 'img/home/learn-api.png'%}"/>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-2">
+                <img class="learn-react" src="{%static 'img/home/learn-react.png'%}"/>
+            </div>
+            <div class="col-2">
+                <img class="learn-tdd" src="{%static 'img/home/learn-tdd.png'%}"/>
+            </div>
+            <div class="col-2">
+                <img class="learn-server" src="{%static 'img/home/learn-server.png'%}"/>
+            </div>
+            <div class="col-2">
+                <img class="learn-scrum" src="{%static 'img/home/learn-scrum.png'%}"/>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

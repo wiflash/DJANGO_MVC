@@ -1,0 +1,49 @@
+{%extends './base.html'%}
+
+{%block title%}
+{%load static%}
+Mentor
+{%endblock%}
+
+{%block nav%}
+<li>
+    <a href="../">Home</a>
+</li>
+<li>
+    <a href="../blog">Blog</a>
+</li>
+<li>
+    <a class="active" href="./">Mentor</a>
+</li>
+<li>
+    <a href="../mentee">Mentee</a>
+</li>
+<li>
+    <a href="../author">Author</a>
+</li>
+{%endblock%}
+
+{%block header%}
+Contact Person: Email: academy@alphatech.id Mobile phone: 0877 9609 9530
+{%endblock%}
+
+{%block content%}
+<div class="mentor-content">
+    <h2><strong>Our Mentor</strong></h2>
+    <div class="container">
+        {%for mentor in mentors%}
+        <div class="row">
+            <div class="col-3">
+                <img class="mentor-pic" src="{{mentor.profile_pic}}"/>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-8">
+                <span>{{mentor.name}}</span>
+                <h6><strong>{{mentor.experience}} ({{mentor.year_exp}} years experience)</strong></h6>
+                <h6>"{{mentor.quotes}}"</h6>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</div>
+{%endblock%}
