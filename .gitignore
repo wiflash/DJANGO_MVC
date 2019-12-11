@@ -167,6 +167,7 @@ dmypy.json
 # Pyre type checker
 
 ### VisualStudioCode ###
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -179,3 +180,4 @@ dmypy.json
 
 # End of https://www.gitignore.io/api/python,django,visualstudiocode
 
+.virtualenv/
