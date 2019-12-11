@@ -117,6 +117,11 @@ header .alpha-tech {
 }
 .blog-content img {
     width: 100%;
+    border-radius: 1%;
+}
+.blog-content .comment, .tanggal {
+    color: rgb(104, 104, 104);
+    font-size: small;
 }
 .blog-content .comment {
     text-align: right;
@@ -143,8 +148,9 @@ header .alpha-tech {
 }
 .mentor-content img {
     width: 100%;
+    border-radius: 1%;
 }
-.mentor-content h2 {
+.mentor-content h2, .blog-content .form-title { /* and title for blog-form */
     text-align: center;
     margin-bottom: 5%;
 }
@@ -167,6 +173,7 @@ header .alpha-tech {
 .author-content img {
     width: 100%;
     margin-bottom: 1%;
+    border-radius: 1%;
 }
 .author-content p {
     margin: 3% auto;

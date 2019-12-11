@@ -11,7 +11,7 @@ Write Your Post
         <div class="row align-items-center">
             <div class="col-2"></div>
             <div class="col-8">
-                <h2><strong>Post Form</strong></h2>
+                <h2 class="form-title"><strong>Post Form</strong></h2>
                 <form action="{% url 'submit' %}" method="POST">
                     {% csrf_token %}
                     <div class="form-group">
