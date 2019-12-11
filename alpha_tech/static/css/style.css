@@ -1,6 +1,7 @@
 body {
     opacity: 1;
     padding-top: 53px;
+    text-align: justify;
 }
 /* HEADER */
 header {

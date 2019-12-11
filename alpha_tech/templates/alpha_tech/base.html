@@ -26,8 +26,21 @@
                 <div class="col-12 col-md-9">
                     <div class="header-nav">
                         <ul class="header-nav__list list-unstyled">
-                        {%block nav%}
-                        {%endblock%}
+                            <li>
+                                <a href="../">Home</a>
+                            </li>
+                            <li>
+                                <a href="../blog" class="{%if flag == 1%}active{%endif%}">Blog</a>
+                            </li>
+                            <li>
+                                <a href="../mentor" class="{%if flag == 1%}active{%endif%}">Mentor</a>
+                            </li>
+                            <li>
+                                <a href="../mentee" class="{%if flag == 1%}active{%endif%}">Mentee</a>
+                            </li>
+                            <li>
+                                <a href="../author" class="{%if flag == 1%}active{%endif%}">Author</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

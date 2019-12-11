@@ -5,24 +5,6 @@
 Blog
 {%endblock%}
 
-{%block nav%}
-<li>
-    <a href="../">Home</a>
-</li>
-<li>
-    <a class="active" href="./">Blog</a>
-</li>
-<li>
-    <a href="../mentor">Mentor</a>
-</li>
-<li>
-    <a href="../mentee">Mentee</a>
-</li>
-<li>
-    <a href="../author">Author</a>
-</li>
-{%endblock%}
-
 {%block content%}
 <div class="blog-content">
     <div class="container">
@@ -31,6 +13,9 @@ Blog
             <div class="col-8">
                 {%for post in posts%}
                 <div class="posts">
+                    <a href="{%url 'form'%}">
+                        <button class="btn btn-primary"><strong>Create New Post</strong></button>
+                    </a>
                     <img src="{{post.picture}}"/>
                     <div class="row">
                         <div class="col-6 tanggal">{{post.date}}</div>
@@ -38,18 +23,9 @@ Blog
                     </div>
                     <h2>{{post.title}}</h2>
                     <p>{{post.content|safe|truncatewords:"30"|linebreaks}}</p>
-                    <div class="row">
-                        <div class="col-6">
-                            <a href="{%url 'post' post.id%}" class="baca">
-                                <button class="btn btn-primary"><strong>Baca Selengkapnya</strong></button>
-                            </a>
-                        </div>
-                        <div class="col-6" style="text-align: right;">
-                            <a href="{%url 'form'%}">
-                                <button class="btn btn-primary"><strong>Create New Post</strong></button>
-                            </a>
-                        </div>
-                    </div>
+                    <a href="{%url 'post' post.id%}" class="baca">
+                        <button class="btn btn-primary"><strong>Baca Selengkapnya</strong></button>
+                    </a>
                 </div>
                 {%endfor%}
             </div>
