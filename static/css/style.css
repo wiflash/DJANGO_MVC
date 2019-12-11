@@ -1,0 +1,207 @@
+body {
+    opacity: 1;
+    padding-top: 53px;
+    text-align: justify;
+}
+/* HEADER */
+header {
+    padding: 11px 0;
+    border-bottom: 1px solid #ececec;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
+    z-index: 2;
+}
+header a {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: #3b3b3b;
+}
+header a:hover {
+    color: #2ec6ce;
+}
+header .alpha-tech {
+    font-size: 20px;
+    text-decoration: none;
+}
+.header-nav {
+    display: table;
+    margin-left: auto;
+}
+.header-nav__list {
+    margin: 0;
+}
+.header-nav__list li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.header-nav__list .active {
+    color: #2ec6ce;
+}
+.header-nav__list a {
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Muli';
+    padding: 0 10px;
+    display: block;
+}
+
+.home-content, .blog-content, .mentor-content, .mentee-content, .author-content {
+    padding-top: 50px;
+}
+
+/* HOME */
+/* Title */
+.home-title {
+    background-color: #2ec6ce;
+    text-align: center;
+    color: white;
+    padding: 5% 25%;
+}
+.home-title h1 {
+    font-size: 40px;
+}
+/* Content learn-job-paid */
+.home-content .benefit-job-paid, .mission {
+    margin-left: 5%;
+}
+.home-content .benefit-job-paid .pic img {
+    display: block;
+    margin-bottom: 4%;
+    width: 35%;
+}
+.home-content p {
+    padding-right: 15%;
+}
+/* Content mission */
+.home-content .mission {
+    margin-top: 5%;
+}
+.home-content .h4-mission{
+    margin-top: 5%;
+}
+.home-content .img-mission {
+    width: 85%;
+}
+.home-content .mission .pic {
+    text-align: center;
+}
+/* Content learn */
+.home-content .learn {
+    margin: 10% auto 5% auto;
+    text-align: center;
+}
+.home-content .row {
+    justify-content: center;
+}
+.home-content .learn .col-2 {
+    border: solid 1px rgb(189, 189, 189);
+    height: 150px;
+    width: 150px;
+    border-radius: 2%;
+    align-content: center;
+    display: grid;
+    justify-content: center;
+    margin: 1% 1%;
+}
+
+/* BLOG */
+.blog-content {
+    margin-bottom: 5%;
+}
+.blog-content img {
+    width: 100%;
+    border-radius: 1%;
+}
+.blog-content .comment, .tanggal {
+    color: rgb(104, 104, 104);
+    font-size: small;
+}
+.blog-content .comment {
+    text-align: right;
+}
+.blog-content .posts {
+    margin-bottom: 7%;
+}
+.blog-content .btn {
+    font-size: 14px;
+    background: #2ec6ce;
+    color: white;
+    border: solid 2px #2ec6ce;
+    margin-bottom: 5%;
+}
+.blog-content .btn:hover {
+    background: white;
+    color: #2ec6ce;
+    border: solid 2px #2ec6ce;
+}
+
+/* MENTOR AND MENTEE */
+.mentor-content {
+    margin-bottom: 5%;
+}
+.mentor-content img {
+    width: 100%;
+    border-radius: 1%;
+}
+.mentor-content h2, .blog-content .form-title { /* and title for blog-form */
+    text-align: center;
+    margin-bottom: 5%;
+}
+.mentor-content span {
+    color: rgb(158, 158, 158);
+    font-size: 25px;
+    font-weight: bold;
+}
+.mentor-content .col-3{
+    text-align: right;
+}
+.mentor-content .row {
+    margin-bottom: 2%;
+}
+
+/* AUTHOR */
+.author-content {
+    margin-bottom: 5%;
+}
+.author-content img {
+    width: 100%;
+    margin-bottom: 1%;
+    border-radius: 1%;
+}
+.author-content p {
+    margin: 3% auto;
+}
+.author-content .summary {
+    margin-bottom: 7%;
+}
+
+/* FOOTER */
+footer .product {
+    background-color: #2ec6ce;
+    justify-content: center;
+    padding: 1%;
+}
+footer .product span {
+    font-size: 20px;
+    margin-right: 0.5%;
+}
+footer .contact {
+    background-color: black;
+    font-size: 18px;
+    justify-content: center;
+    color: white;
+    padding: 1%;
+}
+footer .contact span {
+    margin-right: 0.5%;
+}
+footer .contact .email {
+    color: #2ec6ce;
+}
